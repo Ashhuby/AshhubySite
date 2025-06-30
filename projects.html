@@ -39,76 +39,129 @@
         <section class="all-projects-section">
             <div class="container">
                 
-                <!--Nix -->
+                <!--Nix --> 
                 <article class="project-detail" id="project1">
                     <h3>Nix The Goblinette <br>[In Progress]</h3>
-                    <img src="Images\Nix_Confident.png" alt="Nix Looking Swag asf">
-                    <p><strong>Description:</strong> This project is a [type of application] designed to [solve what problem]. It features [key features like user authentication, data visualization, etc.]. I built this to [explain your motivation or learning goal].</p>
-                    <p><strong>Technologies Used:</strong> Godot, C#</p>
-                    <p><strong>Key Features:</strong></p>
+                    <img src="Images\Nix_Confident.png" alt="Nix Looking Swag asf"><br>
+
+                    <h4>Description:</h4>
+                    <p>This project is a <strong>fast-paced 2D bullet-hell boss rush game</strong> where players embody Nix the Goblinette on a quest for vengeance against the King. The game is designed to provide an intense combat experience through a series of <strong>challenging boss encounters</strong>. It features dynamic battles using <strong>Nix's crystal-powered glider, equipped with a versatile arsenal of rockets, guns, and bombs</strong>, all aimed at defeating the <strong>sinister six</strong> knights of the kingdom. So far I have a small library of devleoped simple games, Nix marks the first ambitious full title I am building. I am so excited to explore complex 2D combat mechanics, design engaging bullet-hell boss patterns, and create an engaging fun world.</p>
+
+                    <h4>Technologies Used:</h4>
+                    <p><strong>Godot, C#</strong></p>
+
+                    <h4>Key Features:</h4>
                     <ul>
-                        <li>Responsive design for mobile and desktop</li>
-                        <li>Dynamic content loading without page refresh</li>
-                        <li>[Another key feature]</li>
+                        <li><strong>Intense Bullet-Hell Boss Fights:</strong> Engage in challenging encounters against six unique knights, each featuring distinct personalities and intricate bullet-hell mechanics.</li>
+                        <li><strong>Versatile Glider Combat:</strong> Pilot Nix's crystal-powered glider, utilizing a powerful and diverse arsenal including rockets, guns, and bombs.</li>
+                        <li><strong>Robust Boss AI with State Machine System:</strong> Utilizes a custom-built state machine framework (comprising a base `State` class and `StateMachine` manager) to enable complex, modular, and easily extensible boss behaviors and attack phases, ensuring dynamic and engaging boss encounters.</li>
+                        <li><strong>Epic Boss Rush Structure:</strong> Progress through a series of escalating boss battles, culminating in the ultimate showdown with the King.</li>
                     </ul>
-                    <p><strong>Challenges & Solutions:</strong> One significant challenge was [describe problem]. I overcame this by [explain your solution, e.g., refactoring code, learning new CSS techniques, using a specific algorithm].</p>
+
+                    <h4>Challenges & Solutions:</h4>
+                    <p>One significant challenge involved <strong>designing and implementing the complex and varied bullet-hell patterns for each of the six unique bosses</strong>. I am overcoming this by developing a flexible, modular projectile-spawning system, combined with the aforementioned state machine to manage boss behaviors and phase transitions. Creating boss fights is Hard, very hard; A bunch of planning has gone into the few currently being worked on to esnure they feel distict and remain fun to encounter. Another challenge is <strong>balancing player abilities (glider movement, weapon power) against the difficulty of each knight's encounter</strong> to ensure a fair yet challenging progression. This is being addressed through continuous playtesting and iterative adjustments to weapon damage, fire rates, player maneuverability, and boss health/attack frequencies, alongside careful design of hitboxes and collision detection.</p>
+
                     <div class="project-links">
                         <a href="https://ashhuby.itch.io/golinette" target="_blank" class="btn btn-primary">Live Demo</a>
                         <a href="https://github.com/Ashhuby/Goblinette" target="_blank" class="btn btn-secondary">GitHub Repo</a>
-                        </div>
+                    </div>
                 </article>
                 
                 <!--Nits -->
                 <hr> <article class="project-detail" id="project2">
                     <h3>Nits <br>[Submission to 'Mini Jame Gam 43' game jam]</h3>
                     <img src="Images\NitsScreenShot.png" alt="Nits Gameplay"><br>
-                    <a href="https://itch.io/jam/mini-jame-gam-43/results">Mini Jame Gam 43 Results</a>
-                    <p><strong>Description:</strong> [Detailed description of Project 2]</p>
-                    <p><strong>Technologies Used:</strong> Godot, C#, PixelStudios</p>
-                    <p><strong>Key Features:</strong></p>
+
+                    <h4>Description:</h4>
+                    <p>This project is a <strong>fast-paced, gesture-based casual game</strong> developed for the 'Mini Jame Gam 43' game jam. The player's goal is to <strong>defend 'Nick's hair' from an escalating invasion of 'Nits' by drawing specific gestures</strong> corresponding to the Nit types. As time progresses, the difficulty increases, requiring quicker reflexes and precise drawing. The game tracks the player's score and 'hair health', aiming to provide an engaging and challenging experience within the constraints of a game jam.</p>
+                    <h4>Technologies Used:</h4>
+                    <p><strong>Godot, C#, PixelStudios</strong></p>
+                    <h4>Key Features:</h4>
                     <ul>
-                        <li>[Feature 1]</li>
-                        <li>[Feature 2]</li>
+                        <li><strong>Intuitive Gesture-Based Combat:</strong> Players draw specific shapes (e.g., horizontal lines, V-shapes) to eliminate different types of Nits.</li>
+                        <li><strong>Dynamic Difficulty Scaling:</strong> Nits spawn faster and the game becomes more challenging over time, indicated by visual and auditory cues (e.g., camera shake, "Faster!" label).</li>
+                        <li><strong>Interactive Game State Feedback:</strong> Real-time display of score and 'hair health', with visual effects for Nit elimination (e.g., lightning particles, animations).</li>
                     </ul>
-                    <p><strong>Challenges & Solutions:</strong> [Discuss challenges and how you solved them for Project 2]</p>
+                    <h4>Challenges & Solutions:</h4>
+                    <p>One significant challenge was <strong>accurately recognizing player-drawn gestures in real-time</strong> while maintaining fluid gameplay, especially given the varying drawing styles of users. I overcame this by <strong>implementing a simplified gesture recognition algorithm that checks for key points and overall shape direction rather than pixel-perfect matches</strong>. Another challenge involved <strong>optimizing the spawning and management of numerous Nit instances</strong> to prevent performance degradation as difficulty increased. This was addressed by <strong>efficiently managing object lifetimes and utilizing Godot's scene instancing for rapid Nit deployment.</strong></p>
                     <div class="project-links">
                         <a href="https://ashhuby.itch.io/nits" target="_blank" class="btn btn-primary">Itch Page</a>
                         <a href="https://github.com/Ashhuby/Mini-Jame-Gam-43" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                        <a href="https://itch.io/jam/mini-jame-gam-43/results" target="_blank" class="btn btn-secondary">Mini Jame Gam 43 Results</a>
                     </div>
                 </article>
                 
                 <!--Snitches -->
-                <hr> <article class="project-detail" id="project3">
+                <article class="project-detail" id="project3">
                     <h3>Snitches Get Stitches <br>[Submission to 'Three Thing Game' game jam]</h3>
                     <img src="Images\SnitchesScreenShot.png" alt="Snitches Get Stitches Gameplay"><br>
-                    <a href="https://threethinggame.com">https://threethinggame.com</a>
-                    <p><strong>Description:</strong> [Detailed description of Project 2]</p>
-                    <p><strong>Technologies Used:</strong> Godot, C#, PixelStudios</p>
-                    <p><strong>Key Features:</strong></p>
+
+                    <h4>Description:</h4>
+                    <p>Snitches Get Stitches is a <strong>fast-paced 2D runner game</strong> and <strong>winner</strong> of the 'Three Thing Game' game jam. In this project, players take on the role of a mischievous student 'Calvin' navigating a school environment, where the <strong>primary objective is to reach the teacher</strong>, dodging hazardious elements and collect valuable homework assignments. The game combines quick reflexes with strategic movement to survive the endless halls of academic peril.</p>
+
+                    <h4>Technologies Used:</h4>
+                    <p><strong>Godot, C#, PixelStudios</strong></p>
+
+                    <h4>Key Features:</h4>
                     <ul>
-                        <li>[Feature 1]</li>
-                        <li>[Feature 2]</li>
+                        <li><strong>Dynamic School Environment:</strong> Navigate a continuously scrolling school setting filled with unique hazards and collectible items.</li>
+                        <li><strong>Core Runner Mechanics:</strong> Utilize responsive controls for running, jumping, and sliding to effectively dodge obstacles and collect homework.</li>
+                        <li><strong>Health & Scoring System:</strong> Track your character's health and aim for high scores by successfully avoiding dangers and gathering assignments.</li>
+                        <li><strong>Adjustable Difficulty:</strong> Engage with a challenging 'Hard Mode' that increases game speed and hazard frequency for a more intense experience.</li>
                     </ul>
-                    <p><strong>Challenges & Solutions:</strong> [Discuss challenges and how you solved them for Project 2]</p>
+
+                    <h4>Challenges & Solutions:</h4>
+                    <p>One significant challenge was <strong>implementing a dynamic and endless environment that felt varied yet performant</strong>. This was solved by utilizing Godot's parallax background features for continuous scrolling and developing an `ObjectSpawner` script to manage the random generation of diverse hazards and collectables. Another challenge involved <strong>balancing game difficulty to provide a fair yet challenging experience </strong>, especially with the introduction of <strong>'Hard Mode'</strong>. This was addressed by creating configurable spawn rates and hazard speeds within the `ObjectSpawner.cs` and less sliding/jumping end lag, allowing for flexible adjustments. </p>
+
                     <div class="project-links">
                         <a href="https://ashhuby.itch.io/snitchesgetstitches" target="_blank" class="btn btn-primary">Itch Page</a>
-                        <a href="https://github.com/Ashhuby/ThreeThingsGame25" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                        <a href="https://github.com/Ashhuby/ThreeThingsGame25" target="_blank" class="btn btn-secondary">GitHub Repo</a> 
+                        <a href="https://threethinggame.com" target="_blank" class="btn btn-secondary">Three Thing Game</a>
                     </div>
                 </article>
 
-                <!--Shubs Bot -->
-                 <article class="project-detail" id="project4">
+                <!-- Shubs Bot -->
+                <article class="project-detail" id="project4">
                     <h3>ShubsBot <br>[Early Access]</h3>
-                    <img src="Images\ShubsBotScreenShot.png" alt="Shubs Bot Profile">
-                    <p><strong>Description:</strong> This project is a [type of application] designed to [solve what problem]. It features [key features like user authentication, data visualization, etc.]. I built this to [explain your motivation or learning goal].</p>
-                    <p><strong>Technologies Used:</strong> Python, Discord API, Itch API, yt_dlp, ffmpeg, python-dotenv</p>
-                    <p><strong>Key Features:</strong></p>
+                    <img src="Images\ShubsBotScreenShot.png" alt="Shubs Bot Profile"><br>
+
+                    <h4>Description:</h4>
+                    <p>This project is a <strong>multi-functional Discord bot</strong> designed to enhance server interaction and entertainment. It features <strong>audio streaming, a personalized Itch.io game library display, and a coin flip betting game</strong>. I built this to deepen my understanding of Discord API integration, asynchronous programming, and external API interactions (Itch.io, YouTube) in Python.</p>
+
+                    <h4>Technologies Used:</h4>
+                    <p><strong>Python, Discord API, Itch API, yt_dlp, ffmpeg, python-dotenv</strong></p>
+
+                    <h4>Key Features:</h4>
                     <ul>
-                        <li>Responsive design for mobile and desktop</li>
-                        <li>Dynamic content loading without page refresh</li>
-                        <li>[Another key feature]</li>
+                        <li><strong>Music Playback:</strong> Users can play, pause, resume, and stop music from YouTube within voice channels.</li>
+                        <li><strong>Itch.io Game Library Display:</strong> Integrates with the Itch.io API to showcase my uploaded game library directly in Discord.</li>
+                        <li><strong>Interactive Coin Flip Game:</strong> A simple betting game for server members to play.</li>
+                        <li><strong>Modular Command Structure:</strong> Utilizes `discord.ext.commands` for organized and extensible command handling means any future additions are simplier to implement.</li>
+                        <li><strong>Secure Credential Management:</strong> Implements `python-dotenv` for securely managing API keys and tokens, keeping sensitive information out of the main codebase.</li>
                     </ul>
-                    <p><strong>Challenges & Solutions:</strong> One significant challenge was [describe problem]. I overcame this by [explain your solution, e.g., refactoring code, learning new CSS techniques, using a specific algorithm].</p>
+
+                    <h4>Challenges & Solutions:</h4>
+                    <p>One significant challenge was <strong>handling audio streaming reliably and efficiently</strong> within Discord voice channels, especially managing YouTube content with `yt_dlp` and `ffmpeg`. I overcame this by carefully configuring `yt_dlp` options and ensuring robust error handling for voice connections and playback states, as well as integrating <strong>`ffmpeg` for audio processing</strong>. Another aspect was <strong>securely managing API keys and tokens using `python-dotenv` </strong>to keep sensitive information out of the main codebase.</p>
+
+                    <div class="project-links">
+                        <a href="www.google.co.uk" target="_blank" class="btn btn-primary">Live Demo [Public access under construction]</a>
+                        <a href="https://github.com/Ashhuby/ShubsBotMrk2" target="_blank" class="btn btn-secondary">GitHub Repo</a>
+                    </div>
+                </article>
+
+                <!-- To Do List --> 
+                <article class="project-detail" id="project6">
+                    <h3>To-Do-List Android Application <br>[In Development]</h3>
+                    <img src="" alt="To-Do-List App Screenshot">
+                    <h4>Description:</h4>
+                    <h4>Technologies Used:</h4>
+                    <p><strong>Android Studio, Kotlin</strong></p>
+                    <h4>Key Features:</h4>
+                    <ul>
+                       
+                    </ul>
+                    <h4>Challenges & Solutions:</h4>
+                    <p></p>
                     <div class="project-links">
                         <a href="www.google.co.uk" target="_blank" class="btn btn-primary">Live Demo [Public access under construction]</a>
                         <a href="https://github.com/Ashhuby/ShubsBotMrk2" target="_blank" class="btn btn-secondary">GitHub Repo</a>
@@ -117,24 +170,30 @@
                 
                 <!--BuketKatch -->
                 <hr> <article class="project-detail" id="project5">
-                    <h3>Buket Katch</h3>
-                    <img src="Images\BuketKatchScreenShot.png" alt="Snitches Get Stitches Gameplay"><br>
+                    <h3>Buket Katch <br>[Released]</h3>
+                    <img src="Images\BuketKatchScreenShot.png" alt="Buket Katch Gameplay"><br>
 
-                    <p><strong>Description:</strong> [Detailed description of Project 5]</p>
-                    <p><strong>Technologies Used:</strong> Godot, C#</p>
-                    <p><strong>Key Features:</strong></p>
+                    <h4>Description:</h4>
+                    <p>My first project was a <strong>simple catcher-style game</strong> where players control a bucket to catch falling objects. The goal is to catch as many objects as possible while avoiding letting them fall past the bucket, which loses the player a life.</p>
+
+                    <h4>Technologies Used:</h4>
+                    <p><strong>Godot, C#</strong></p>
+
+                    <h4>Key Features:</h4>
                     <ul>
-                        <li>[Feature 1]</li>
-                        <li>[Feature 2]</li>
+                        <li><strong>Intuitive Catching Mechanics:</strong> Players control a bucket to collect falling objects.</li>
+                        <li><strong>Scoring and Health System:</strong> Tracks player score for caught objects and manages health based on missed objects.</li>
+                        <li><strong>Dynamic Object Spawning:</strong> Objects fall from various points at a controlled rate.</li>
                     </ul>
-                    <p><strong>Challenges & Solutions:</strong> [Discuss challenges and how you solved them for Project 2]</p>
+
+                    <h4>Challenges & Solutions:</h4>
+                    <p>A primary challenge was implementing the core game loop, specifically <strong>managing object spawning and interactions</strong>. This was addressed by creating a dedicated `ObjectSpawner` to handle object generation and a `KillZone` to detect missed objects, which then reduces player health and triggers game over conditions.</p>
+
                     <div class="project-links">
                         <a href="https://ashhuby.itch.io/buketkatch" target="_blank" class="btn btn-primary">Itch Page</a>
                         <a href="https://github.com/Ashhuby/BuketKatch" target="_blank" class="btn btn-secondary">GitHub Repo</a>
                     </div>
                 </article>
-
-
                 </div>
         </section>
     </main>
